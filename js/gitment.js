@@ -1,3 +1,9 @@
+/**
+ * Created by Xiaotao.Nie on 11/04/2018.
+ * All right reserved
+ * IF you have any question please email onlythen@yeah.net
+ */
+
 var Gitment =
     /******/ (function(modules) { // webpackBootstrap
     /******/ 	// The module cache
@@ -3413,7 +3419,7 @@ var Gitment =
                     }, options);
 
                     this.state.user.isLoggingIn = true;
-                    _utils.http.post('https://auth.baixiaotu.cc', {
+                    _utils.http.post('https://gh-oauth.imsun.net', {
                         code: code,
                         client_id: client_id,
                         client_secret: client_secret
