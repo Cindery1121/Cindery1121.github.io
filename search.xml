@@ -8,9 +8,15 @@
       <link href="/2022/09/02/%E7%89%A9%E7%90%86%E9%80%9A%E4%BF%A1%E8%BF%87%E7%A8%8B/"/>
       <url>/2022/09/02/%E7%89%A9%E7%90%86%E9%80%9A%E4%BF%A1%E8%BF%87%E7%A8%8B/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="数据传输"><a href="#数据传输" class="headerlink" title="数据传输"></a>数据传输</h1><ul><li><p>物理层</p></li><li><p>发送数据时，软件通过输入设备告知给操作系统，操作系统发送给网卡，网卡告知芯片，芯片通过电路数据发送出去（正弦、余弦波）</p></li><li><p>网络通信模型</p><p><img src="https://cindery1121.oss-cn-zhangjiakou.aliyuncs.com/202209020958918.png" alt="image-20220902095849839"></p></li></ul><h2 id="Cisco-Packet-Tracer"><a href="#Cisco-Packet-Tracer" class="headerlink" title="Cisco Packet Tracer"></a>Cisco Packet Tracer</h2><h2 id="Wireshark"><a href="#Wireshark" class="headerlink" title="Wireshark"></a>Wireshark</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">tcp.prot == 8080</span><br><span class="line">ip.addr == 192.168.1.1</span><br><span class="line">&amp;&amp;</span><br><span class="line">||</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> 网络基础 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -24,6 +30,12 @@
         <content type="html"><![CDATA[<h1 id="扫描器"><a href="#扫描器" class="headerlink" title="扫描器"></a>扫描器</h1><h2 id="扫描原理"><a href="#扫描原理" class="headerlink" title="扫描原理"></a>扫描原理</h2><ol><li><p>漏洞相关基本定义</p><ol><li>漏洞：操作系统上运行的服务，可以通过非预期方式获取系统信息、破坏系统可用性或者完整性。我们就认为这个服务存在漏洞。</li><li>服务：运行在系统上提供一些功能的应用程序，通常会监听特定的端口，远程主机通过特定协议与运行该服务的服务器进行通信。</li><li>协议：规定系统之间通信报文的格式。</li></ol></li><li><p>扫描方式</p><p>扫描器有三种扫描方式：版本扫描、原理扫描和本地扫描。</p><ol><li><p>版本扫描</p><p>基于探测到端口banner信息，匹配漏洞库中该版本组件存在的漏洞直接报出。常见有绝大部分的web组件漏洞（apache、tomcat、Nginx、weblogic、webphere、php等）openssh漏洞、Oracle漏洞、FTP漏洞、NTP漏洞、MySQL漏洞等等。</p></li><li><p>原理扫描</p><p>基于针对单个漏洞利用&#x2F;检查插件报出，构造漏洞检测&#x2F;利用包后发送到目标主机，如果目标主机返回漏洞存在的预期结果，则报出该漏洞。</p><p>此类漏洞网上都有漏洞原理，漏洞概念性证明（poc，Proof of concept），甚至是exp。扫描报告也提供了一些相关链接，可以帮助使用者对漏洞原理进行了解。</p></li><li><p>本地扫描</p><p>又称之为登陆扫描。是通过在扫描器上预设账号，通过SMB&#x2F;SSH等协议登录到目标信息获取信息的扫描方式。</p><p>该扫描方式在一定程度上减少远程版本扫描误报，例如Oracle、OpenSSH等应用的漏洞。</p><p>Windows 登录扫描可检测的漏洞有：</p></li></ol></li><li><p>扫描过程</p></li></ol>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> waf </tag>
+            
+        </tags>
       
     </entry>
     
